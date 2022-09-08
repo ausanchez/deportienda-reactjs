@@ -1,0 +1,16 @@
+#item-count {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contador {
+    display: flex;
+    width: 10%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
