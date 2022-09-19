@@ -11,9 +11,10 @@ const ItemListContainer = ({}) => {
 const [products, setProducts] = useState([]);
 const [loading, setLoading] = useState(true);
 const {categoryId} = useParams()
-console.log(categoryId)
+
 
 useEffect(() => {
+    setLoading(true)
     getArray(arrayProductos)
     .then(res=> {
         categoryId ? setProducts(res.filter((item)=> item.category === categoryId)) : setProducts(res)
